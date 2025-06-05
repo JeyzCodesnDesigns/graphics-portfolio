@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>John Moises Dumlao - Portfolio</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;600&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #f4e9d8;
+      color: #1e1e1e;
+    }
+
+    header {
+      background-color: #243e36;
+      color: #fff;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3em;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 1.2em;
+      margin: 10px 0;
+    }
+
+    nav {
+      margin-top: 20px;
+    }
+
+    nav a {
+      color: #ffbc42;
+      margin: 0 15px;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 50px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.2em;
+      color: #243e36;
+      margin-bottom: 20px;
+    }
+
+    .info-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .card {
+      background: #fff;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
+    }
+
+    .project {
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    }
+
+    .project img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .project h3 {
+      font-size: 1.2em;
+      margin: 15px;
+      color: #243e36;
+    }
+
+    .project p {
+      margin: 0 15px 15px;
+      font-size: 0.95em;
+      color: #555;
+    }
+
+    footer {
+      text-align: center;
+      background: #243e36;
+      color: #fff;
+      padding: 30px 20px;
+      font-size: 0.9em;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #ffbc42;
+      color: #000;
+      padding: 6px 12px;
+      border-radius: 20px;
+      font-size: 0.8em;
+      margin: 5px 5px 0 0;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>John Moises Dumlao</h1>
+    <p>Graphic Designer | Angeles City, Pampanga</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#info">Info</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>Hello, I’m John!</h2>
+    <p>
+      I’m a Graphic Designer and 2nd year BSCS student at City College of Angeles. I specialize in visual storytelling through graphic design, with hands-on experience in creative branding and customer service. I love coding, designing, and mixing the two to build engaging, useful content.
+    </p>
+  </section>
+
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div class="projects-grid">
+      <div class="project">
+        <img src="img/project1.jpg" alt="Classy Premium Ramen" />
+        <h3>Classy Premium Ramen</h3>
+        <p>Elegant and premium branding for a high-end ramen concept.</p>
+      </div>
+      <div class="project">
+        <img src="img/project2.jpg" alt="Burgers and Dips" />
+        <h3>Burgers and Dips</h3>
+        <p>Visual identity and promotional materials for a casual burger joint.</p>
+      </div>
+      <div class="project">
+        <img src="img/project3.jpg" alt="Funky and Funny Ramen" />
+        <h3>Funky and Funny Ramen</h3>
+        <p>Colorful and humorous graphics designed for youth-focused ramen packaging.</p>
+      </div>
+      <div class="project">
+        <img src="img/project4.jpg" alt="Boba Milk Tea" />
+        <h3>Boba Milk Tea</h3>
+        <p>Trendy boba shop branding, including social media and print materials.</p>
+      </div>
+      <div class="project">
+        <img src="img/project5.jpg" alt="Pork Sisig" />
+        <h3>Pork Sisig</h3>
+        <p>Bold and flavorful visual style for a pork sisig eatery.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="info">
+    <h2>More About Me</h2>
+    <div class="info-grid">
+
+      <div class="card">
+        <h3>Education</h3>
+        <p>Santiago City National High School (Grade 12 Graduate)</p>
+        <p>City College of Angeles — 2nd year, BSCS</p>
+      </div>
+
+      <div class="card">
+        <h3>Experience</h3>
+        <p><strong>Customer Service Rep</strong> - Order Hotline Rep (2023)</p>
+      </div>
+
+      <div class="card">
+        <h3>Skills</h3>
+        <p><strong>Coding:</strong></p>
+        <div class="tag">Java</div>
+        <div class="tag">HTML</div>
+        <div class="tag">CSS</div>
+        <div class="tag">C</div>
+        <div class="tag">C#</div>
+        <div class="tag">C++</div>
+        <p><strong>Graphic Design:</strong></p>
+        <div class="tag">Photoshop</div>
+        <div class="tag">Illustrator</div>
+        <div class="tag">Premiere Pro</div>
+        <div class="tag">After Effects</div>
+      </div>
+
+      <div class="card">
+        <h3>Languages</h3>
+        <div class="tag">English</div>
+        <div class="tag">Tagalog</div>
+        <div class="tag">Ilocano</div>
+
+        <h3 style="margin-top:20px;">Hobbies</h3>
+        <div class="tag">Reading Novels</div>
+        <div class="tag">Memes</div>
+        <div class="tag">Social Media</div>
+        <div class="tag">Football</div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:johndumlao055@gmail.com">johndumlao055@gmail.com</a></p>
+    <p>Phone: 09772648088</p>
+  </section>
+
+  <footer>
+    &copy; 2025 John Moises Dumlao. All rights reserved.
+  </footer>
+
+</body>
+</html>
